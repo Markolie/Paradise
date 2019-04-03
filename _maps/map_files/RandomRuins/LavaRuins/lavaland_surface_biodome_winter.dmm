@@ -48,7 +48,9 @@
 /area/ruin/powered/snow_biodome)
 "ak" = (
 /turf/simulated/floor/plating/asteroid/snow{
-	oxygen = 22nitrogen = 82temperature = 180
+	oxygen = 22;
+	nitrogen = 82;
+	temperature = 180
 	},
 /area/ruin/powered/snow_biodome)
 "al" = (
@@ -67,7 +69,9 @@
 /area/ruin/powered/snow_biodome)
 "ao" = (
 /turf/simulated/floor/snow{
-	oxygen = 22nitrogen = 82temperature = 180
+	oxygen = 22;
+	nitrogen = 82;
+	temperature = 180
 	},
 /area/ruin/powered/snow_biodome)
 "aq" = (
@@ -107,13 +111,17 @@
 /obj/item/trash/semki,
 /obj/item/trash/candy,
 /turf/simulated/floor/plating/asteroid/snow{
-	oxygen = 22nitrogen = 82temperature = 180
+	oxygen = 22;
+	nitrogen = 82;
+	temperature = 180
 	},
 /area/ruin/powered/snow_biodome)
 "az" = (
 /obj/structure/flora/tree/pine,
 /turf/simulated/floor/plating/asteroid/snow{
-	oxygen = 22nitrogen = 82temperature = 180
+	oxygen = 22;
+	nitrogen = 82;
+	temperature = 180
 	},
 /area/ruin/powered/snow_biodome)
 "aA" = (
@@ -125,7 +133,9 @@
 "aC" = (
 /obj/structure/flora/tree/dead,
 /turf/simulated/floor/plating/asteroid/snow{
-	oxygen = 22nitrogen = 82temperature = 180
+	oxygen = 22;
+	nitrogen = 82;
+	temperature = 180
 	},
 /area/ruin/powered/snow_biodome)
 "aD" = (
@@ -150,13 +160,17 @@
 "aI" = (
 /obj/structure/flora/bush,
 /turf/simulated/floor/plating/asteroid/snow{
-	oxygen = 22nitrogen = 82temperature = 180
+	oxygen = 22;
+	nitrogen = 82;
+	temperature = 180
 	},
 /area/ruin/powered/snow_biodome)
 "aJ" = (
 /obj/vehicle/atv,
 /turf/simulated/floor/plating/asteroid/snow{
-	oxygen = 22nitrogen = 82temperature = 180
+	oxygen = 22;
+	nitrogen = 82;
+	temperature = 180
 	},
 /area/ruin/powered/snow_biodome)
 "aL" = (
@@ -182,18 +196,24 @@
 "aQ" = (
 /obj/structure/flora/grass/both,
 /turf/simulated/floor/plating/asteroid/snow{
-	oxygen = 22nitrogen = 82temperature = 180
+	oxygen = 22;
+	nitrogen = 82;
+	temperature = 180
 	},
 /area/ruin/powered/snow_biodome)
 "aR" = (
 /obj/structure/flora/tree/pine/xmas,
 /turf/simulated/floor/plating/asteroid/snow{
-	oxygen = 22nitrogen = 82temperature = 180
+	oxygen = 22;
+	nitrogen = 82;
+	temperature = 180
 	},
 /area/ruin/powered/snow_biodome)
 "bl" = (
 /turf/simulated/floor/wood{
-	oxygen = 22nitrogen = 82temperature = 180;
+	oxygen = 22;
+	nitrogen = 82;
+	temperature = 180;
 	name = "bridge"
 	},
 /area/ruin/powered/snow_biodome)
@@ -202,7 +222,9 @@
 	dir = 1
 	},
 /turf/simulated/floor/snow{
-	oxygen = 22nitrogen = 82temperature = 180
+	oxygen = 22;
+	nitrogen = 82;
+	temperature = 180
 	},
 /area/ruin/powered/snow_biodome)
 "bw" = (
@@ -222,7 +244,9 @@
 	dir = 8
 	},
 /turf/simulated/floor/plating/asteroid/snow{
-	oxygen = 22nitrogen = 82temperature = 180
+	oxygen = 22;
+	nitrogen = 82;
+	temperature = 180
 	},
 /area/ruin/powered/snow_biodome)
 "bz" = (
@@ -234,7 +258,9 @@
 	dir = 4
 	},
 /turf/simulated/floor/plating/asteroid/snow{
-	oxygen = 22nitrogen = 82temperature = 180
+	oxygen = 22;
+	nitrogen = 82;
+	temperature = 180
 	},
 /area/ruin/powered/snow_biodome)
 "bD" = (
@@ -242,19 +268,25 @@
 	dir = 1
 	},
 /turf/simulated/floor/plating/asteroid/snow{
-	oxygen = 22nitrogen = 82temperature = 180
+	oxygen = 22;
+	nitrogen = 82;
+	temperature = 180
 	},
 /area/ruin/powered/snow_biodome)
 "bM" = (
 /obj/machinery/light,
 /turf/simulated/floor/plating/asteroid/snow{
-	oxygen = 22nitrogen = 82temperature = 180
+	oxygen = 22;
+	nitrogen = 82;
+	temperature = 180
 	},
 /area/ruin/powered/snow_biodome)
 "bN" = (
 /obj/machinery/light,
 /turf/simulated/floor/snow{
-	oxygen = 22nitrogen = 82temperature = 180
+	oxygen = 22;
+	nitrogen = 82;
+	temperature = 180
 	},
 /area/ruin/powered/snow_biodome)
 "dS" = (
