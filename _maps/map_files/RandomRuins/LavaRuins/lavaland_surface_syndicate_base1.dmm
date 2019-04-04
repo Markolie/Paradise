@@ -1476,7 +1476,7 @@
 	},
 /area/ruin/unpowered/syndicate_lava_base/chemistry)
 "dG" = (
-/turf/simulated/floor/plating/airless/catwalk,
+/obj/structure/lattice/catwalk,
 /turf/simulated/floor/plating/lava/smooth/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "dI" = (
