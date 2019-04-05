@@ -27,7 +27,7 @@
 	#include "map_files\RandomRuins\LavaRuins\lavaland_surface_blooddrunk3.dmm"
 	#include "map_files\RandomRuins\LavaRuins\lavaland_surface_cube.dmm"
 	#include "map_files\RandomRuins\LavaRuins\lavaland_surface_cultaltar.dmm"
-	#include "map_files\RandomRuins\LavaRuins\lavaland_surface_envy.dmm"
+	//#include "map_files\RandomRuins\LavaRuins\lavaland_surface_envy.dmm"
 	#include "map_files\RandomRuins\LavaRuins\lavaland_surface_fountain_hall.dmm"
 	//#include "map_files\RandomRuins\LavaRuins\lavaland_surface_gluttony.dmm"
 	//#include "map_files\RandomRuins\LavaRuins\lavaland_surface_golem_ship.dmm"
