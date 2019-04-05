@@ -10,7 +10,7 @@
 	#include "map_files\RandomZLevels\example.dmm"
 	#include "map_files\RandomZLevels\moonoutpost19.dmm"
 	#include "map_files\RandomZLevels\spacebattle.dmm"
-	//#include "map_files\RandomZLevels\spacehotel.dmm"
+	#include "map_files\RandomZLevels\spacehotel.dmm"
 	#include "map_files\RandomZLevels\stationCollision.dmm"
 	#include "map_files\RandomZLevels\terrorspiders.dmm"
 	#include "map_files\RandomZLevels\undergroundoutpost45.dmm"
