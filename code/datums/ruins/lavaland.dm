@@ -114,11 +114,3 @@ datum/map_template/ruin/lavaland/ash_walker
 	suffix = "lavaland_surface_cultaltar.dmm"
 	allow_duplicates = FALSE
 	cost = 10
-
-/datum/map_template/ruin/lavaland/fountain
-	name = "Fountain Hall"
-	id = "fountain"
-	description = "The fountain has a warning on the side. DANGER: May have undeclared side effects that only become obvious when implemented."
-	suffix = "lavaland_surface_fountain_hall.dmm"
-	cost = 5
-
