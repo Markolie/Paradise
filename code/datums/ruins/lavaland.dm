@@ -12,6 +12,19 @@
 	Comes with a rustic wooden bar and suicidal bartender."
 	suffix = "lavaland_biodome_beach.dmm"
 
+/datum/map_template/ruin/lavaland/biodome/clown
+	name = "Biodome Clown Planet"
+	id = "biodome-clown"
+	description = "WELCOME TO CLOWN PLANET! HONK HONK HONK etc.!"
+	suffix = "lavaland_biodome_clown_planet.dmm"
+
+/datum/map_template/ruin/lavaland/biodome/winter
+	name = "Biodome Winter"
+	id = "biodome-winter"
+	description = "For those getaways where you want to get back to nature, but you don't want to leave the fortified military compound where you spend your days. \
+	Includes a unique(*) laser pistol display case, and the recently introduced I.C.E(tm)."
+	suffix = "lavaland_surface_biodome_winter.dmm"
+
 /datum/map_template/ruin/lavaland/hierophant
 	name = "Hierophant's Arena"
 	id = "hierophant"
@@ -85,3 +98,27 @@ datum/map_template/ruin/lavaland/ash_walker
 /datum/map_template/ruin/lavaland/blood_drunk_miner/hunter
 	name = "Blood-Drunk Miner (Hunter)"
 	suffix = "lavaland_surface_blooddrunk3.dmm"
+
+/datum/map_template/ruin/lavaland/cube
+	name = "The Wishgranter Cube"
+	id = "wishgranter-cube"
+	description = "Nothing good can come from this. Learn from their mistakes and turn around."
+	suffix = "lavaland_surface_cube.dmm"
+	cost = 10
+	allow_duplicates = FALSE
+
+/datum/map_template/ruin/lavaland/cultaltar
+	name = "Summoning Ritual"
+	id = "cultaltar"
+	description = "A place of vile worship, the scrawling of blood in the middle glowing eerily. A demonic laugh echoes throughout the caverns"
+	suffix = "lavaland_surface_cultaltar.dmm"
+	allow_duplicates = FALSE
+	cost = 10
+
+/datum/map_template/ruin/lavaland/fountain
+	name = "Fountain Hall"
+	id = "fountain"
+	description = "The fountain has a warning on the side. DANGER: May have undeclared side effects that only become obvious when implemented."
+	suffix = "lavaland_surface_fountain_hall.dmm"
+	cost = 5
+
