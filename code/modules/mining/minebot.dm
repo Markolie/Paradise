@@ -218,6 +218,7 @@
 		user.lighting_alpha = LIGHTING_PLANE_ALPHA_MOSTLY_VISIBLE
 
 	user.sync_lighting_plane_alpha()
+	user.sync_nightvision_screen()
 
 	to_chat(user, "<span class='notice'>You toggle your meson vision [(user.sight & SEE_TURFS) ? "on" : "off"].</span>")
 

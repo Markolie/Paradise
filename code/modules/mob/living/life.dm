@@ -206,6 +206,7 @@
 	see_in_dark = 8
 	see_invisible = SEE_INVISIBLE_OBSERVER
 	sync_lighting_plane_alpha()
+	sync_nightvision_screen()
 
 /mob/living/proc/handle_hud_icons()
 	handle_hud_icons_health()

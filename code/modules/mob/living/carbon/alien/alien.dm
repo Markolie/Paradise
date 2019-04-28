@@ -301,3 +301,4 @@ Des: Removes all infected images from the alien.
 
 	SEND_SIGNAL(src, COMSIG_MOB_UPDATE_SIGHT)
 	sync_lighting_plane_alpha()
+	sync_nightvision_screen()
