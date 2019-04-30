@@ -420,9 +420,10 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 	set desc = "Follow and orbit a mob."
 
 	var/list/mobs = getpois(skip_mindless=1)
-	var/input = input("Please, select a mob!", "Haunt", null, null) as null|anything in mobs
-	var/mob/target = mobs[input]
-	ManualFollow(target)
+
+	var/datum/nano_module/input/input_item = new("Test", "Test", mobs)
+	var/mob/chosen = input_item.ui_interact(src)
+	ManualFollow(chosen)
 
 // This is the ghost's follow verb with an argument
 /mob/dead/observer/proc/ManualFollow(var/atom/movable/target)
