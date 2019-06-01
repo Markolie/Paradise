@@ -12,6 +12,11 @@
 	can_flashlight = 1
 	flight_x_offset = 15
 	flight_y_offset = 9
+
+	can_bayonet = TRUE
+	knife_x_offset = 20
+	knife_y_offset = 12
+
 	var/overheat_time = 16
 	var/holds_charge = FALSE
 	var/unique_frequency = FALSE // modified by KA modkits
@@ -129,16 +134,10 @@
 	overheat = FALSE
 
 /obj/item/gun/energy/kinetic_accelerator/update_icon()
-	overlays.Cut()
 	if(empty_state && !can_shoot())
-		overlays += empty_state
-
-	if(gun_light && can_flashlight)
-		var/iconF = "flight"
-		if(gun_light.on)
-			iconF = "flight_on"
-		overlays += image(icon = icon, icon_state = iconF, pixel_x = flight_x_offset, pixel_y = flight_y_offset)
-
+		add_overlay(empty_state)
+	else
+		cut_overlay(empty_state)
 
 /obj/item/gun/energy/kinetic_accelerator/experimental
 	name = "experimental kinetic accelerator"

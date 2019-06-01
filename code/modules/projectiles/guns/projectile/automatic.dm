@@ -8,6 +8,15 @@
 	fire_delay = 2
 	actions_types = list(/datum/action/item_action/toggle_firemode)
 
+	var/semi_overlay
+	var/burst_overlay
+
+/obj/item/gun/projectile/automatic/Initialize(mapload)
+	. = ..()
+
+	semi_overlay = "[initial(icon_state)]semi"
+	burst_overlay = "[initial(icon_state)]burst"
+
 /obj/item/gun/projectile/automatic/isHandgun()
 	return 0
 
@@ -15,9 +24,12 @@
 	..()
 	overlays.Cut()
 	if(!select)
-		overlays += "[initial(icon_state)]semi"
+		cut_overlay(burst_overlay)
+		add_overlay(semi_overlay)
 	if(select == 1)
-		overlays += "[initial(icon_state)]burst"
+		cut_overlay(semi_overlay)
+		add_overlay(burst_overlay)
+
 	icon_state = "[initial(icon_state)][magazine ? "-[magazine.max_ammo]" : ""][chambered ? "" : "-e"][suppressed ? "-suppressed" : ""]"
 
 /obj/item/gun/projectile/automatic/attackby(var/obj/item/A as obj, mob/user as mob, params)
@@ -96,6 +108,9 @@
 	fire_sound = 'sound/weapons/gunshots/gunshot_smg.ogg'
 	fire_delay = 2
 	burst_size = 2
+	can_bayonet = TRUE
+	knife_x_offset = 26
+	knife_y_offset = 12
 
 /obj/item/gun/projectile/automatic/c20r/New()
 	..()
@@ -123,6 +138,9 @@
 	can_suppress = 0
 	burst_size = 1
 	actions_types = list()
+	can_bayonet = TRUE
+	knife_x_offset = 25
+	knife_y_offset = 12
 
 /obj/item/gun/projectile/automatic/wt550/update_icon()
 	..()
