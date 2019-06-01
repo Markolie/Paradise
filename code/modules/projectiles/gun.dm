@@ -310,7 +310,19 @@ obj/item/gun/proc/newshot()
 		to_chat(user, "<span class='notice'>You attach [K] to [src]'s bayonet lug.</span>")
 		bayonet = K
 
+<<<<<<< HEAD
 		add_bayonet()
+=======
+		var/state = "bayonet"							//Generic state.
+		if(bayonet.icon_state in icon_states('icons/obj/guns/bayonets.dmi'))		//Snowflake state?
+			state = bayonet.icon_state
+
+		var/icon/bayonet_icons = 'icons/obj/guns/bayonets.dmi'
+		knife_overlay = mutable_appearance(bayonet_icons, state)
+		knife_overlay.pixel_x = knife_x_offset
+		knife_overlay.pixel_y = knife_y_offset
+		add_overlay(knife_overlay, TRUE)
+>>>>>>> f9493040be372243047b10c3cbb187bae6f8ac83
 
 	else if(istype(I, /obj/item/screwdriver))
 		if(!CanUseTopic(user, physical_state))
@@ -343,6 +355,7 @@ obj/item/gun/proc/newshot()
 		user.put_in_hands(item_to_remove)
 
 	if(item_to_remove == bayonet)
+<<<<<<< HEAD
 		return clear_bayonet()
 	else if(item_to_remove == gun_light)
 		return clear_gunlight(user)
@@ -359,6 +372,13 @@ obj/item/gun/proc/newshot()
 	add_overlay(knife_overlay, TRUE)
 
 /obj/item/gun/proc/clear_bayonet()
+=======
+		return clear_bayonet(user)
+	else if(item_to_remove == gun_light)
+		return clear_gunlight(user)
+
+/obj/item/gun/proc/clear_bayonet(mon/user)
+>>>>>>> f9493040be372243047b10c3cbb187bae6f8ac83
 	if(!bayonet)
 		return
 	bayonet = null
@@ -401,7 +421,11 @@ obj/item/gun/proc/newshot()
 			set_light(0)
 		
 		cut_overlay(flashlight_overlay, TRUE)
+<<<<<<< HEAD
 		var/state = "flight[gun_light.on ? "_on" : ""]"	//Generic state.
+=======
+		var/state = "flight[gun_light.on? "_on":""]"	//Generic state.
+>>>>>>> f9493040be372243047b10c3cbb187bae6f8ac83
 		if(gun_light.icon_state in icon_states('icons/obj/guns/flashlights.dmi'))	//Snowflake state?
 			state = gun_light.icon_state
 		flashlight_overlay = mutable_appearance('icons/obj/guns/flashlights.dmi', state)
