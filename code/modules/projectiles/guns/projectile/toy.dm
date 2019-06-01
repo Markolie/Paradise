@@ -48,18 +48,6 @@
 	mag_type = /obj/item/ammo_box/magazine/toy/enforcer
 	can_flashlight = TRUE
 
-/obj/item/gun/projectile/automatic/toy/pistol/enforcer/update_icon()
-	..()
-	overlays.Cut()
-	if(gun_light)
-		var/iconF = "Enforcer_light"
-		if(gun_light.on)
-			iconF = "Enforcer_light-on"
-		overlays += image(icon = 'icons/obj/guns/projectile.dmi', icon_state = iconF, pixel_x = 0)
-
-/obj/item/gun/projectile/automatic/toy/pistol/enforcer/ui_action_click()
-	toggle_gunlight()
-
 /obj/item/gun/projectile/shotgun/toy
 	name = "foam force shotgun"
 	desc = "A toy shotgun with wood furniture and a four-shell capacity underneath. Ages 8 and up."

@@ -209,6 +209,9 @@
 	slot_flags = 0 //no SLOT_BACK sprite, alas
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction
 	fire_sound = 'sound/weapons/gunshots/gunshot_rifle.ogg'
+	can_bayonet = TRUE
+	knife_x_offset = 27
+	knife_y_offset = 13
 	var/bolt_open = 0
 
 /obj/item/gun/projectile/shotgun/boltaction/pump(mob/M)

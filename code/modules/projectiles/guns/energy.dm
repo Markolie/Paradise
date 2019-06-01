@@ -132,11 +132,13 @@
 				overlays += image(icon = icon, icon_state = iconState, pixel_x = ammo_x_offset * (i -1))
 		else
 			overlays += image(icon = icon, icon_state = "[icon_state]_[modifystate ? "[shot.select_name]_" : ""]charge[ratio]")
+
 	if(gun_light && can_flashlight)
-		var/iconF = "flight"
-		if(gun_light.on)
-			iconF = "flight_on"
-		overlays += image(icon = icon, icon_state = iconF, pixel_x = flight_x_offset, pixel_y = flight_y_offset)
+		update_gun_light()
+
+	if(bayonet && can_bayonet)
+		add_bayonet()
+
 	if(itemState)
 		itemState += "[ratio]"
 		item_state = itemState

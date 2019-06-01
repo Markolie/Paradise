@@ -20,7 +20,6 @@
 /obj/item/gun/projectile/automatic/pistol/update_icon()
 	..()
 	icon_state = "[initial(icon_state)][chambered ? "" : "-e"][suppressed ? "-suppressed" : ""]"
-	return
 
 //M1911//
 /obj/item/gun/projectile/automatic/pistol/m1911
@@ -42,6 +41,11 @@
 	unique_reskin = TRUE
 	can_flashlight = TRUE
 
+	flight_x_offset = 18
+	flight_y_offset = 13
+
+	var/mutable_appearance/enforcer_suppressor_overlay
+
 /obj/item/gun/projectile/automatic/pistol/enforcer/New()
 	..()
 	options["Grey slide"] = "enforcer_grey"
@@ -60,19 +64,15 @@
 		icon_state = "[current_skin][chambered ? "" : "-e"]"
 	else
 		icon_state = "[initial(icon_state)][chambered ? "" : "-e"]"
-	overlays.Cut()
+
 	if(suppressed)
-		overlays += image(icon = icon, icon_state = "enforcer_supp", pixel_x = 4)
-	if(gun_light)
-		var/iconF = "Enforcer_light"
-		if(gun_light.on)
-			iconF = "Enforcer_light-on"
-		overlays += image(icon = icon, icon_state = iconF, pixel_x = 0)
+		enforcer_suppressor_overlay = image(icon = icon, icon_state = "enforcer_supp", pixel_x = 4)
+		add_overlay(enforcer_suppressor_overlay)
+	else
+		cut_overlay(enforcer_suppressor_overlay)
 
-/obj/item/gun/projectile/automatic/pistol/enforcer/ui_action_click()
+/obj/item/gun/projectile/automatic/ui_action_click()
 	toggle_gunlight()
-
-/obj/item/gun/projectile/automatic/pistol/enforcer/lethal
 
 /obj/item/gun/projectile/automatic/pistol/enforcer/lethal/New()
 	magazine = new/obj/item/ammo_box/magazine/enforcer/lethal
