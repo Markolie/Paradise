@@ -355,7 +355,6 @@ obj/item/gun/proc/newshot()
 		user.put_in_hands(item_to_remove)
 
 	if(item_to_remove == bayonet)
-<<<<<<< HEAD
 		return clear_bayonet()
 	else if(item_to_remove == gun_light)
 		return clear_gunlight(user)
@@ -372,13 +371,6 @@ obj/item/gun/proc/newshot()
 	add_overlay(knife_overlay, TRUE)
 
 /obj/item/gun/proc/clear_bayonet()
-=======
-		return clear_bayonet(user)
-	else if(item_to_remove == gun_light)
-		return clear_gunlight(user)
-
-/obj/item/gun/proc/clear_bayonet(mon/user)
->>>>>>> f9493040be372243047b10c3cbb187bae6f8ac83
 	if(!bayonet)
 		return
 	bayonet = null
